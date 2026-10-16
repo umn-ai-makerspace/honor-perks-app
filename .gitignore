@@ -1,4 +1,15 @@
 node_modules/
+.expo/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+*.cer
+.env
+.env.*
+!.env.example
 *.zip
 .DS_Store
 Thumbs.db
