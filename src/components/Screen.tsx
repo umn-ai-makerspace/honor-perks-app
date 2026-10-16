@@ -1,0 +1,2 @@
+import React, { PropsWithChildren } from 'react';import { SafeAreaView, ScrollView, StyleSheet, ViewStyle } from 'react-native';import { colors } from '../theme';
+export default function Screen({children,scroll=true,style}:{children:React.ReactNode;scroll?:boolean;style?:ViewStyle}){return <SafeAreaView style={s.safe}>{scroll?<ScrollView contentContainerStyle={[s.content,style]} keyboardShouldPersistTaps="handled">{children}</ScrollView>:children}</SafeAreaView>}const s=StyleSheet.create({safe:{flex:1,backgroundColor:colors.navy},content:{padding:20,paddingBottom:40}});
